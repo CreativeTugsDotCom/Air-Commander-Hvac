@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Commander HVAC | Heating & Cooling Services in Pearland, TX</title>
+    <meta name="description" content="Professional heating, ventilation, and air conditioning services in Pearland, Texas. AC installation, maintenance, heating systems, and 10% discount for military and first responders.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            500: '#0066cc',
+                            600: '#0052a3',
+                            700: '#003d7a',
+                            900: '#00264d',
+                        },
+                        accent: {
+                            500: '#ff7700',
+                            600: '#e06600',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(0, 38, 77, 0.92) 0%, rgba(0, 82, 163, 0.85) 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 102, 204, 0.1), 0 10px 10px -5px rgba(0, 102, 204, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
+
+    <div class="bg-brand-900 text-white text-xs sm:text-sm py-2 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span><i class="fa-solid fa-location-dot text-accent-500 mr-1.5"></i> Serving Pearland, TX & Surrounding Areas</span>
+                <span class="hidden md:inline text-brand-500">|</span>
+                <span class="hidden md:inline"><i class="fa-solid fa-shield-halved text-accent-500 mr-1.5"></i> 10% Off for Military & First Responders</span>
+            </div>
+            <div class="flex items-center gap-4 font-medium">
+                <a href="tel:3462453005" class="hover:text-accent-500 transition-colors flex items-center gap-1.5">
+                    <i class="fa-solid fa-phone text-accent-500"></i> (346) 245-3005
+                </a>
+                <span class="text-brand-500">|</span>
+                <a href="mailto:damion.eaton@yahoo.com" class="hover:text-accent-500 transition-colors flex items-center gap-1.5">
+                    <i class="fa-solid fa-envelope text-accent-500"></i> damion.eaton@yahoo.com
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <header id="navbar" class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#home" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-xl bg-brand-500 flex items-center justify-center text-white shadow-md shadow-brand-500/20 group-hover:bg-brand-600 transition-colors">
+                    <i class="fa-solid fa-snowflake text-xl"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-tight text-brand-900 block leading-none">AIR COMMANDER</span>
+                    <span class="text-xs font-semibold tracking-widest text-brand-500 uppercase">HVAC SERVICES</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center gap-8 font-medium text-slate-600">
+                <a href="#home" class="hover:text-brand-500 transition-colors">Home</a>
+                <a href="#about" class="hover:text-brand-500 transition-colors">About</a>
+                <a href="#services" class="hover:text-brand-500 transition-colors">Services</a>
+                <a href="#why-us" class="hover:text-brand-500 transition-colors">Why Choose Us</a>
+                <a href="#reviews" class="hover:text-brand-500 transition-colors">Reviews</a>
+                <a href="#contact" class="hover:text-brand-500 transition-colors">Contact</a>
+            </nav>
+
+            <!-- Action Buttons -->
+            <div class="hidden sm:flex items-center gap-4">
+                <a href="tel:3462453005" class="hidden xl:flex flex-col text-right">
+                    <span class="text-xs text-slate-400 font-medium">24/7 Support</span>
+                    <span class="text-sm font-bold text-brand-900">(346) 245-3005</span>
+                </a>
+                <a href="#service-form-section" class="bg-accent-500 hover:bg-accent-600 text-white px-5 py-2.5 rounded-xl font-semibold shadow-lg shadow-accent-500/20 transition-all transform hover:-translate-y-0.5">
+                    Request Service
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" aria-label="Toggle Navigation Menu" class="lg:hidden p-2 rounded-xl text-slate-600 hover:bg-slate-100 focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-6 shadow-xl space-y-4">
+            <a href="#home" class="block text-slate-700 hover:text-brand-500 font-medium py-1.5 mobile-link">Home</a>
+            <a href="#about" class="block text-slate-700 hover:text-brand-500 font-medium py-1.5 mobile-link">About Us</a>
+            <a href="#services" class="block text-slate-700 hover:text-brand-500 font-medium py-1.5 mobile-link">Services</a>
+            <a href="#why-us" class="block text-slate-700 hover:text-brand-500 font-medium py-1.5 mobile-link">Why Choose Us</a>
+            <a href="#reviews" class="block text-slate-700 hover:text-brand-500 font-medium py-1.5 mobile-link">Reviews</a>
+            <a href="#contact" class="block text-slate-700 hover:text-brand-500 font-medium py-1.5 mobile-link">Contact</a>
+            <div class="pt-4 border-t border-slate-100 flex flex-col gap-3">
+                <a href="tel:3462453005" class="flex items-center justify-center gap-2 py-3 bg-brand-50 text-brand-900 font-bold rounded-xl">
+                    <i class="fa-solid fa-phone text-brand-500"></i> (346) 245-3005
+                </a>
+                <a href="#service-form-section" class="flex items-center justify-center gap-2 py-3 bg-accent-500 text-white font-bold rounded-xl shadow-md mobile-link">
+                    Request HVAC Service
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="relative min-h-[90vh] flex items-center bg-slate-900 overflow-hidden text-white">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1920&auto=format&fit=crop" alt="HVAC Technician servicing air conditioner" class="w-full h-full object-cover object-center opacity-40 scale-105 animate-pulse duration-1000">
+            <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Hero Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-brand-500/20 border border-brand-500/30 text-brand-100 px-4 py-1.5 rounded-full text-sm font-medium backdrop-blur-sm">
+                        <i class="fa-solid fa-award text-accent-500"></i> Pearland's Trusted Heating & Cooling Experts
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Reliable Heating & Cooling. <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent-500 to-orange-400">Comfort You Can Count On.</span>
+                    </h1>
+                    
+                    <p class="text-lg sm:text-xl text-slate-200 max-w-2xl font-normal leading-relaxed">
+                        Keep your home or business comfortable year-round with professional HVAC installation, dependable maintenance, and expert heating and cooling solutions in Pearland, Texas.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="#service-form-section" class="bg-accent-500 hover:bg-accent-600 text-white font-bold px-8 py-4 rounded-xl shadow-xl shadow-accent-500/30 transition-all flex items-center justify-center gap-3 text-center">
+                            <span>Request HVAC Service</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="tel:3462453005" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold px-8 py-4 rounded-xl backdrop-blur-md transition-all flex items-center justify-center gap-3 text-center">
+                            <i class="fa-solid fa-phone text-accent-500"></i>
+                            <span>Call (346) 245-3005</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust badges row -->
+                    <div class="pt-8 grid grid-cols-3 gap-4 border-t border-white/10 text-slate-300 text-sm font-medium">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle text-accent-500 text-lg"></i>
+                            <span>Licensed & Insured</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-bolt text-accent-500 text-lg"></i>
+                            <span>Prompt Response</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-medal text-accent-500 text-lg"></i>
+                            <span>Quality Workmanship</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Feature Cards / Floating Card -->
+                <div class="lg:col-span-5 hidden lg:block">
+                    <div class="relative">
+                        <!-- Main Card -->
+                        <div class="bg-white/10 backdrop-blur-xl border border-white/20 p-8 rounded-3xl shadow-2xl space-y-6">
+                            <div class="flex items-center justify-between pb-4 border-b border-white/10">
+                                <div>
+                                    <h3 class="text-xl font-bold text-white">Emergency Services</h3>
+                                    <p class="text-xs text-slate-300">Fast dispatch in Pearland, TX</p>
+                                </div>
+                                <div class="w-12 h-12 rounded-2xl bg-accent-500 flex items-center justify-center text-white shadow-lg">
+                                    <i class="fa-solid fa-temperature-arrow-up text-xl"></i>
+                                </div>
+                            </div>
+                            
+                            <!-- Mini Service Highlights -->
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-3 bg-white/5 p-3.5 rounded-xl border border-white/10">
+                                    <div class="w-8 h-8 rounded-lg bg-brand-500 flex items-center justify-center text-white text-sm">
+                                        <i class="fa-solid fa-snowflake"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-sm font-bold text-white">AC Installation & Repair</h4>
+                                        <p class="text-xs text-slate-300">Keep cool during Texas summers</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-3 bg-white/5 p-3.5 rounded-xl border border-white/10">
+                                    <div class="w-8 h-8 rounded-lg bg-accent-500 flex items-center justify-center text-white text-sm">
+                                        <i class="fa-solid fa-fire"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-sm font-bold text-white">Heating & Furnaces</h4>
+                                        <p class="text-xs text-slate-300">Reliable warmth when temperatures drop</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-brand-900/60 p-4 rounded-xl border border-brand-500/30 flex items-center justify-between">
+                                <div class="flex items-center gap-3">
+                                    <i class="fa-solid fa-percent text-accent-500 text-xl"></i>
+                                    <div>
+                                        <p class="text-xs font-semibold text-brand-100">Military & First Responders</p>
+                                        <p class="text-sm font-bold text-accent-500">10% Special Discount</p>
+                                    </div>
+                                </div>
+                                <a href="#service-form-section" class="text-xs bg-white text-brand-900 font-bold px-3 py-2 rounded-lg hover:bg-brand-100 transition-colors">
+                                    Claim
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge -->
+                        <div class="absolute -bottom-6 -left-6 bg-white text-slate-900 p-4 rounded-2xl shadow-2xl flex items-center gap-3 border border-slate-100">
+                            <div class="w-10 h-10 rounded-xl bg-accent-500 text-white flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 font-medium">Customer Satisfaction</p>
+                                <p class="text-sm font-extrabold text-slate-900">Top-Tier Local Service</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-slate-50 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Image Collage -->
+                <div class="lg:col-span-6 relative">
+                    <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                        <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=1000&auto=format&fit=crop" alt="Air Commander HVAC professional technician working" class="w-full h-[420px] object-cover">
+                    </div>
+                    <!-- Secondary inset image -->
+                    <div class="absolute -bottom-8 -right-8 z-20 w-64 rounded-2xl overflow-hidden shadow-2xl border-4 border-white hidden sm:block">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=600&auto=format&fit=crop" alt="Modern HVAC condenser unit" class="w-full h-48 object-cover">
+                    </div>
+                    <!-- Decorative background blob -->
+                    <div class="absolute -top-10 -left-10 w-72 h-72 bg-brand-100 rounded-full blur-3xl opacity-70 z-0"></div>
+                </div>
+
+                <!-- Right Content -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-brand-100 text-brand-700 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
+                        <i class="fa-solid fa-house-chimney text-brand-500"></i> About Air Commander HVAC
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                        Your Dedicated Local Heating & Cooling Partner in Pearland, Texas
+                    </h2>
+
+                    <p class="text-slate-600 text-lg leading-relaxed">
+                        At <strong class="text-slate-900 font-semibold">Air Commander HVAC</strong>, we take pride in delivering dependable, honest, and high-quality heating, ventilation, and air conditioning solutions for residential and commercial customers throughout Pearland and nearby communities.
+                    </p>
+
+                    <p class="text-slate-600 leading-relaxed">
+                        Whether you are facing an unexpected system breakdown during the peak of summer, need routine tune-ups to maximize energy efficiency, or require a complete new installation, our professional team is committed to keeping your indoor environment comfortable and safe.
+                    </p>
+
+                    <!-- Checkmarks list -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="flex items-center gap-3">
+                            <div class="w-6 h-6 rounded-full bg-brand-500/10 text-brand-500 flex items-center justify-center font-bold text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span class="text-sm font-semibold text-slate-800">Expert AC Maintenance</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-6 h-6 rounded-full bg-brand-500/10 text-brand-500 flex items-center justify-center font-bold text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span class="text-sm font-semibold text-slate-800">Precision Installations</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-6 h-6 rounded-full bg-brand-500/10 text-brand-500 flex items-center justify-center font-bold text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span class="text-sm font-semibold text-slate-800">Heating & Furnace Care</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-6 h-6 rounded-full bg-brand-500/10 text-brand-500 flex items-center justify-center font-bold text-xs">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span class="text-sm font-semibold text-slate-800">Military & First Responder Discount</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 flex items-center gap-6">
+                        <a href="#service-form-section" class="bg-brand-500 hover:bg-brand-600 text-white font-bold px-7 py-3.5 rounded-xl shadow-lg shadow-brand-500/20 transition-all">
+                            Book a Service
+                        </a>
+                        <a href="tel:3462453005" class="text-brand-900 font-bold hover:text-brand-500 transition-colors flex items-center gap-2">
+                            <i class="fa-solid fa-phone text-accent-500"></i> (346) 245-3005
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <div class="inline-flex items-center gap-2 bg-brand-100 text-brand-700 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
+                    <i class="fa-solid fa-gear text-brand-500"></i> Comprehensive HVAC Services
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    Professional Solutions for Every Season
+                </h2>
+                <p class="text-slate-600 text-lg">
+                    From routine maintenance to complex system installations, Air Commander HVAC provides reliable, high-standard workmanship for residential and commercial properties.
+                </p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="bg-white rounded-3xl border border-slate-100 shadow-lg shadow-slate-100 overflow-hidden card-hover transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="h-52 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=800&auto=format&fit=crop" alt="Air Conditioning Installation" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-brand-500 text-white text-xs font-bold px-3 py-1.5 rounded-lg shadow-md">
+                                Popular
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <h3 class="text-xl font-bold text-slate-900">Air Conditioning Installation</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Professional cooling system installation designed to maximize indoor comfort and energy efficiency for your home or business.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#service-form-section" onclick="setServiceSelect('Air Conditioning Installation')" class="inline-flex items-center gap-2 text-brand-500 hover:text-brand-700 font-bold text-sm group">
+                            <span>Request This Service</span>
+                            <i class="fa-solid fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-white rounded-3xl border border-slate-100 shadow-lg shadow-slate-100 overflow-hidden card-hover transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="h-52 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=800&auto=format&fit=crop" alt="AC Maintenance & Servicing" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <h3 class="text-xl font-bold text-slate-900">AC Maintenance & Servicing</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Routine tune-ups and diagnostic checks to help your cooling system operate efficiently, prevent breakdowns, and extend equipment life.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#service-form-section" onclick="setServiceSelect('AC Maintenance & Servicing')" class="inline-flex items-center gap-2 text-brand-500 hover:text-brand-700 font-bold text-sm group">
+                            <span>Request This Service</span>
+                            <i class="fa-solid fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-white rounded-3xl border border-slate-100 shadow-lg shadow-slate-100 overflow-hidden card-hover transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="h-52 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1542013936-69f0eed2c716?q=80&w=800&auto=format&fit=crop" alt="Heating & Furnace Services" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <h3 class="text-xl font-bold text-slate-900">Heating & Furnace Services</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Comprehensive heating system inspection, troubleshooting, repair, and replacement to ensure dependable warmth during cooler months.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#service-form-section" onclick="serviceSelect('Heating & Furnace Services')" class="inline-flex items-center gap-2 text-brand-500 hover:text-brand-700 font-bold text-sm group">
+                            <span>Request This Service</span>
+                            <i class="fa-solid fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-white rounded-3xl border border-slate-100 shadow-lg shadow-slate-100 overflow-hidden card-hover transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="h-52 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=800&auto=format&fit=crop" alt="Heat Pump Solutions" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <h3 class="text-xl font-bold text-slate-900">Heat Pump Solutions</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Energy-efficient heat pump installation, repair, and maintenance solutions for versatile year-round indoor climate control.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#service-form-section" onclick="serviceSelect('Heat Pump Solutions')" class="inline-flex items-center gap-2 text-brand-500 hover:text-brand-700 font-bold text-sm group">
+                            <span>Request This Service</span>
+                            <i class="fa-solid fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-white rounded-3xl border border-slate-100 shadow-lg shadow-slate-100 overflow-hidden card-hover transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="h-52 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop" alt="Boiler & Heating Systems" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <h3 class="text-xl font-bold text-slate-900">Boiler & Heating Systems</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Expert servicing and maintenance for boiler systems to maintain steady and comfortable indoor temperatures.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#service-form-section" onclick="serviceSelect('Boiler & Heating Systems')" class="inline-flex items-center gap-2 text-brand-500 hover:text-brand-700 font-bold text-sm group">
+                            <span>Request This Service</span>
+                            <i class="fa-solid fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-white rounded-3xl border border-slate-100 shadow-lg shadow-slate-100 overflow-hidden card-hover transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="h-52 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?q=80&w=800&auto=format&fit=crop" alt="HVAC Cleaning & System Care" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <h3 class="text-xl font-bold text-slate-900">HVAC Cleaning & System Care</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Thorough cleaning and preventive care to help maintain cleaner air quality and dependable equipment performance.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#service-form-section" onclick="serviceSelect('HVAC Cleaning & System Care')" class="inline-flex items-center gap-2 text-brand-500 hover:text-brand-700 font-bold text-sm group">
+                            <span>Request This Service</span>
+                            <i class="fa-solid fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="why-us" class="py-24 bg-brand-50 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-white text-brand-700 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider shadow-sm">
+                        <i class="fa-solid fa-shield text-brand-500"></i> Why Choose Air Commander
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                        Built on Trust, Reliability, & Quality Workmanship
+                    </h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        We understand that your home comfort is paramount. Our team is dedicated to providing transparent communication, efficient service execution, and professional care for every project.
+                    </p>
+                    <div class="pt-2">
+                        <a href="#service-form-section" class="bg-brand-500 hover:bg-brand-600 text-white font-bold px-7 py-3.5 rounded-xl shadow-lg shadow-brand-500/20 inline-flex items-center gap-2">
+                            <span>Get Started Today</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        
+                        <!-- Benefit 1 -->
+                        <div class="bg-white p-7 rounded-3xl shadow-sm border border-slate-100 space-y-4">
+                            <div class="w-12 h-12 rounded-2xl bg-brand-500 text-white flex items-center justify-center text-xl shadow-md shadow-brand-500/20">
+                                <i class="fa-solid fa-user-gear"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900">Heating & Cooling Solutions</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Complete coverage for residential and commercial heating and air conditioning needs in Pearland, TX.
+                            </p>
+                        </div>
+
+                        <!-- Benefit 2 -->
+                        <div class="bg-white p-7 rounded-3xl shadow-sm border border-slate-100 space-y-4">
+                            <div class="w-12 h-12 rounded-2xl bg-accent-500 text-white flex items-center justify-center text-xl shadow-md shadow-accent-500/20">
+                                <i class="fa-solid fa-house-user"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900">Residential Comfort Focus</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Tailored approaches centered around maintaining optimal indoor air quality and reliable temperature control.
+                            </p>
+                        </div>
+
+                        <!-- Benefit 3 -->
+                        <div class="bg-white p-7 rounded-3xl shadow-sm border border-slate-100 space-y-4">
+                            <div class="w-12 h-12 rounded-2xl bg-brand-700 text-white flex items-center justify-center text-xl shadow-md shadow-brand-700/20">
+                                <i class="fa-solid fa-comments"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900">Clear Communication</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Straightforward pricing, honest recommendations, and transparent updates throughout your service.
+                            </p>
+                        </div>
+
+                        <!-- Benefit 4 -->
+                        <div class="bg-white p-7 rounded-3xl shadow-sm border border-slate-100 space-y-4">
+                            <div class="w-12 h-12 rounded-2xl bg-accent-600 text-white flex items-center justify-center text-xl shadow-md shadow-accent-600/20">
+                                <i class="fa-solid fa-medal"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900">Military & First Responder Discount</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Proudly offering a 10% discount to military personnel and first responders as a token of gratitude.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gradient-to-r from-brand-900 to-brand-700 text-white relative overflow-hidden">
+        <div class="absolute right-0 top-0 translate-x-1/3 -translate-y-1/2 w-96 h-96 bg-accent-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="space-y-3 text-center md:text-left">
+                    <div class="inline-flex items-center gap-2 bg-accent-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                        <i class="fa-solid fa-star"></i> Special Community Offer
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+                        A Special Thank You to Those Who Serve
+                    </h2>
+                    <p class="text-brand-100 max-w-2xl text-base sm:text-lg">
+                        Military personnel and first responders receive <strong class="text-accent-500 font-bold">10% off</strong> our HVAC services. Contact us today to learn more and schedule your service.
+                    </p>
+                </div>
+                <div class="flex-shrink-0">
+                    <a href="#service-form-section" class="bg-accent-500 hover:bg-accent-600 text-white font-bold px-8 py-4 rounded-xl shadow-xl shadow-accent-500/30 transition-all inline-flex items-center gap-3">
+                        <span>Contact Us to Learn More</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto space-y-4 mb-16">
+                <div class="inline-flex items-center gap-2 bg-brand-100 text-brand-700 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
+                    <i class="fa-solid fa-list-check text-brand-500"></i> Simple Process
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    How It Works
+                </h2>
+                <p class="text-slate-600">
+                    Getting professional heating and cooling service in Pearland is fast and straightforward.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+                
+                <!-- Step 1 -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 text-center space-y-4 relative">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-500 text-white text-xl font-bold flex items-center justify-center mx-auto shadow-lg shadow-brand-500/20">
+                        1
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">Choose Your Service</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Explore our comprehensive HVAC installation, maintenance, or heating solutions to match your needs.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 text-center space-y-4 relative">
+                    <div class="w-14 h-14 rounded-2xl bg-accent-500 text-white text-xl font-bold flex items-center justify-center mx-auto shadow-lg shadow-accent-500/20">
+                        2
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">Submit Service Request</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Fill out our secure online service request form with your preferred date, time, and service details.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 text-center space-y-4 relative">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-700 text-white text-xl font-bold flex items-center justify-center mx-auto shadow-lg shadow-brand-700/20">
+                        3
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">Get Connected</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Our team will contact you promptly to discuss scheduling, confirm details, and provide expert service.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto space-y-4 mb-16">
+                <div class="inline-flex items-center gap-2 bg-brand-100 text-brand-700 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
+                    <i class="fa-solid fa-star text-accent-500"></i> Customer Reviews
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    What Our Customers Say
+                </h2>
+                <p class="text-slate-600">
+                    We value feedback and strive for excellence. Below are placeholder testimonials illustrating our commitment to customer satisfaction.
+                </p>
+            </div>
+
+            <!-- Testimonials Grid (Placeholders as requested) -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-1 text-amber-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm leading-relaxed italic">
+                            "Air Commander HVAC provided prompt, professional service when our AC system needed urgent maintenance. Highly recommend their expertise in Pearland!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-700 font-bold flex items-center justify-center text-sm">
+                            JD
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-slate-900">[Verified Customer Placeholder]</p>
+                            <p class="text-xs text-slate-400">Pearland, TX Resident</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-1 text-amber-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm leading-relaxed italic">
+                            "Very straightforward communication and clean installation work. They explained all options clearly without any high-pressure sales tactics."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-700 font-bold flex items-center justify-center text-sm">
+                            SM
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-slate-900">[Verified Customer Placeholder]</p>
+                            <p class="text-xs text-slate-400">Pearland, TX Homeowner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-1 text-amber-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm leading-relaxed italic">
+                            "Appreciate the military discount and the courteous technician. Our heating system is running quieter and more efficiently than ever."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-700 font-bold flex items-center justify-center text-sm">
+                            MR
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-slate-900">[Verified Customer Placeholder]</p>
+                            <p class="text-xs text-slate-400">Pearland, TX Resident & Veteran</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="service-form-section" class="py-24 bg-white relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-brand-900 to-brand-700 rounded-3xl shadow-2xl p-8 sm:p-12 text-white relative overflow-hidden">
+                <div class="absolute right-0 bottom-0 translate-x-1/4 translate-y-1/4 w-96 h-96 bg-accent-500/20 rounded-full blur-3xl pointer-events-none"></div>
+                
+                <div class="text-center max-w-2xl mx-auto space-y-4 mb-12 relative z-10">
+                    <div class="inline-flex items-center gap-2 bg-accent-500 text-white px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
+                        <i class="fa-solid fa-calendar-check"></i> Request Service
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+                        Schedule Your HVAC Service
+                    </h2>
+                    <p class="text-brand-100 text-base">
+                        Fill out the form below to request an appointment. Our team will contact you promptly to discuss your heating and cooling needs.
+                    </p>
+                </div>
+
+                <!-- Interactive Form -->
+                <form id="hvac-request-form" class="space-y-6 relative z-10" onsubmit="handleFormSubmit(event)">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- Full Name -->
+                        <div>
+                            <label for="fullName" class="block text-xs font-semibold uppercase tracking-wider text-brand-100 mb-2">Full Name *</label>
+                            <input type="text" id="fullName" required class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:border-accent-500 text-sm" placeholder="John Doe">
+                        </div>
+                        <!-- Phone Number -->
+                        <div>
+                            <label for="phoneNum" class="block text-xs font-semibold uppercase tracking-wider text-brand-100 mb-2">Phone Number *</label>
+                            <input type="tel" id="phoneNum" required class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:border-accent-500 text-sm" placeholder="(346) 000-0000">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- Email -->
+                        <div>
+                            <label for="emailAddr" class="block text-xs font-semibold uppercase tracking-wider text-brand-100 mb-2">Email Address *</label>
+                            <input type="email" id="emailAddr" required class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:border-accent-500 text-sm" placeholder="john@example.com">
+                        </div>
+                        <!-- Service Type -->
+                        <div>
+                            <label for="serviceType" class="block text-xs font-semibold uppercase tracking-wider text-brand-100 mb-2">Service Type *</label>
+                            <select id="serviceType" required class="w-full bg-slate-900 border border-white/20 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-accent-500 text-sm">
+                                <option value="" disabled selected>Select HVAC Service</option>
+                                <option value="Air Conditioning Installation">Air Conditioning Installation</option>
+                                <option value="AC Maintenance & Servicing">AC Maintenance & Servicing</option>
+                                <option value="Heating & Furnace Services">Heating & Furnace Services</option>
+                                <option value="Heat Pump Solutions">Heat Pump Solutions</option>
+                                <option value="Boiler & Heating Systems">Boiler & Heating Systems</option>
+                                <option value="HVAC Cleaning & System Care">HVAC Cleaning & System Care</option>
+                                <option value="Other HVAC Services">Other HVAC Services</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                        <!-- Property Type -->
+                        <div>
+                            <label for="propertyType" class="block text-xs font-semibold uppercase tracking-wider text-brand-100 mb-2">Property Type</label>
+                            <select id="propertyType" class="w-full bg-slate-900 border border-white/20 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-accent-500 text-sm">
+                                <option value="Residential">Residential</option>
+                                <option value="Commercial">Commercial</option>
+                            </select>
+                        </div>
+                        <!-- Preferred Date -->
+                        <div>
+                            <label for="prefDate" class="block text-xs font-semibold uppercase tracking-wider text-brand-100 mb-2">Preferred Date *</label>
+                            <input type="date" id="prefDate" required class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-accent-500 text-sm">
+                        </div>
+                        <!-- Preferred Time -->
+                        <div>
+                            <label for="prefTime" class="block text-xs font-semibold uppercase tracking-wider text-brand-100 mb-2">Preferred Time</label>
+                            <select id="prefTime" class="w-full bg-slate-900 border border-white/20 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-accent-500 text-sm">
+                                <option value="Morning (9AM - 12PM)">Morning (9 AM - 12 PM)</option>
+                                <option value="Afternoon (12PM - 4PM)">Afternoon (12 PM - 4 PM)</option>
+                                <option value="Late Afternoon (4PM - 6PM)">Late Afternoon (4 PM - 6 PM)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Service Address -->
+                    <div>
+                        <label for="serviceAddress" class="block text-xs font-semibold uppercase tracking-wider text-brand-100 mb-2">Service Address / Location *</label>
+                        <input type="text" id="serviceAddress" required class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:border-accent-500 text-sm" placeholder="Pearland, TX address or neighborhood">
+                    </div>
+
+                    <!-- Issue Description -->
+                    <div>
+                        <label for="issueDesc" class="block text-xs font-semibold uppercase tracking-wider text-brand-100 mb-2">Description of HVAC Issue or Request</label>
+                        <textarea id="issueDesc" rows="4" class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-slate-400 focus:outline-none focus:border-accent-500 text-sm" placeholder="Please describe your heating or cooling system details..."></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="text-center pt-4">
+                        <button type="submit" class="w-full sm:w-auto bg-accent-500 hover:bg-accent-600 text-white font-bold px-10 py-4 rounded-xl shadow-xl shadow-accent-500/30 transition-all text-base">
+                            Submit Service Request
+                        </button>
+                        <p class="text-xs text-brand-100 mt-3">
+                            * Note: Appointment scheduling requires verification. We will contact you shortly to confirm your booking.
+                        </p>
+                    </div>
+
+                    <!-- Success Feedback Box (Hidden by default) -->
+                    <div id="form-success-message" class="hidden bg-emerald-600/90 border border-emerald-400 text-white p-6 rounded-2xl text-center space-y-2">
+                        <div class="w-12 h-12 bg-white text-emerald-600 rounded-full flex items-center justify-center mx-auto text-xl font-bold">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <h3 class="text-lg font-bold">Service Request Received Successfully!</h3>
+                        <p class="text-sm text-emerald-100">
+                            Thank you! We have received your inquiry. A representative from Air Commander HVAC will reach out to you shortly at the provided phone number or email address.
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto space-y-4 mb-16">
+                <div class="inline-flex items-center gap-2 bg-brand-100 text-brand-700 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
+                    <i class="fa-solid fa-location-dot text-brand-500"></i> Get In Touch
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    Contact Air Commander HVAC
+                </h2>
+                <p class="text-slate-600">
+                    Reach out directly or visit our service area coverage in Pearland, Texas.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                <!-- Contact Info Cards -->
+                <div class="lg:col-span-5 space-y-6 flex flex-col justify-between">
+                    
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 space-y-6">
+                        <h3 class="text-xl font-bold text-slate-900 pb-4 border-b border-slate-100">
+                            Contact Information
+                        </h3>
+
+                        <div class="space-y-4">
+                            <!-- Phone -->
+                            <a href="tel:3462453005" class="flex items-start gap-4 group">
+                                <div class="w-12 h-12 rounded-2xl bg-brand-50 text-brand-500 flex items-center justify-center text-xl flex-shrink-0 group-hover:bg-brand-500 group-hover:text-white transition-colors">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 font-semibold uppercase">Phone Number</p>
+                                    <p class="text-base font-bold text-slate-900 group-hover:text-brand-500 transition-colors">(346) 245-3005</p>
+                                </div>
+                            </a>
+
+                            <!-- Email -->
+                            <a href="mailto:damion.eaton@yahoo.com" class="flex items-start gap-4 group">
+                                <div class="w-12 h-12 rounded-2xl bg-brand-50 text-brand-500 flex items-center justify-center text-xl flex-shrink-0 group-hover:bg-brand-500 group-hover:text-white transition-colors">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 font-semibold uppercase">Email Address</p>
+                                    <p class="text-base font-bold text-slate-900 group-hover:text-brand-500 transition-colors">damion.eaton@yahoo.com</p>
+                                </div>
+                            </a>
+
+                            <!-- Location -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-2xl bg-brand-50 text-brand-500 flex items-center justify-center text-xl flex-shrink-0">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 font-semibold uppercase">Service Location</p>
+                                    <p class="text-base font-bold text-slate-900">Pearland, Texas & Surrounding Areas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Business Hours -->
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 space-y-4">
+                        <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+                            <i class="fa-solid fa-clock text-brand-500"></i> Business Hours
+                        </h3>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between py-1.5 border-b border-slate-100">
+                                <span class="text-slate-600 font-medium">Monday – Friday</span>
+                                <span class="font-bold text-slate-900">9:00 AM – 6:00 PM</span>
+                            </div>
+                            <div class="flex justify-between py-1.5 border-b border-slate-100">
+                                <span class="text-slate-600 font-medium">Saturday</span>
+                                <span class="font-bold text-slate-900">9:00 AM – 2:00 PM</span>
+                            </div>
+                            <div class="flex justify-between py-1.5">
+                                <span class="text-slate-600 font-medium">Sunday</span>
+                                <span class="font-bold text-rose-600">Closed</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Embedded Map centered on Pearland, TX -->
+                <div class="lg:col-span-7 bg-white p-3 rounded-3xl shadow-sm border border-slate-100 flex flex-col">
+                    <div class="w-full h-full min-h-[450px] rounded-2xl overflow-hidden relative">
+                        <iframe 
+                            title="Pearland Texas Map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111244.75702283993!2d-95.36769947999999!3d29.5604085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640df2b1ffca4cd%3A0x8e87397b9195dcb0!2sPearland%2C%20TX!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="w-full h-full">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-brand-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1920&auto=format&fit=crop" alt="HVAC Background" class="w-full h-full object-cover opacity-15">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-6">
+            <div class="inline-flex items-center gap-2 bg-brand-500/30 text-brand-100 px-4 py-1.5 rounded-full text-xs font-semibold backdrop-blur-sm border border-brand-500/40">
+                <i class="fa-solid fa-snowflake text-accent-500"></i> Air Commander HVAC Services
+            </div>
+            <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight max-w-3xl mx-auto">
+                Ready to Take Control of Your Comfort?
+            </h2>
+            <p class="text-slate-300 text-lg max-w-2xl mx-auto">
+                Whether you need a system installation or routine maintenance, get in touch with Air Commander HVAC to discuss your heating and cooling needs.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 pt-4">
+                <a href="#service-form-section" class="bg-accent-500 hover:bg-accent-600 text-white font-bold px-8 py-4 rounded-xl shadow-xl shadow-accent-500/30 transition-all flex items-center justify-center gap-2">
+                    <span>Request Service</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="tel:3462453005" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold px-8 py-4 rounded-xl backdrop-blur-md transition-all flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-phone text-accent-500"></i>
+                    <span>Call (346) 245-3005</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-slate-400 py-16 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-900">
+                
+                <!-- Col 1: Brand & Info -->
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="#home" class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-brand-500 flex items-center justify-center text-white shadow-md">
+                            <i class="fa-solid fa-snowflake text-lg"></i>
+                        </div>
+                        <div>
+                            <span class="text-lg font-extrabold tracking-tight text-white block leading-none">AIR COMMANDER</span>
+                            <span class="text-[10px] font-semibold tracking-widest text-brand-400 uppercase">HVAC SERVICES</span>
+                        </div>
+                    </a>
+                    <p class="text-sm text-slate-400 leading-relaxed max-w-sm">
+                        Professional heating, ventilation, and air conditioning contractor serving Pearland, Texas and surrounding communities with dedication, reliability, and quality workmanship.
+                    </p>
+                    <div class="pt-2 text-xs text-accent-500 font-semibold flex items-center gap-2">
+                        <i class="fa-solid fa-shield-halved"></i> 10% Off for Military Personnel & First Responders
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="space-y-4">
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-white">Quick Links</h3>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#why-us" class="hover:text-white transition-colors">Why Choose Us</a></li>
+                        <li><a href="#reviews" class="hover:text-white transition-colors">Customer Reviews</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Services -->
+                <div class="space-y-4">
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-white">Our Services</h3>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#services" class="hover:text-white transition-colors">AC Installation</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">AC Maintenance</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Heating & Furnaces</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Heat Pump Solutions</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Boiler Systems</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">HVAC Cleaning</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact Info -->
+                <div class="space-y-4">
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-white">Contact Info</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li>
+                            <span class="block text-xs text-slate-500">Location</span>
+                            <span class="text-white font-medium">Pearland, Texas</span>
+                        </li>
+                        <li>
+                            <span class="block text-xs text-slate-500">Phone</span>
+                            <a href="tel:3462453005" class="text-accent-500 font-bold hover:underline">(346) 245-3005</a>
+                        </li>
+                        <li>
+                            <span class="block text-xs text-slate-500">Email</span>
+                            <a href="mailto:damion.eaton@yahoo.com" class="text-white hover:text-accent-500 transition-colors">damion.eaton@yahoo.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Copyright & Bottom Bar -->
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+                <p>&copy; <span id="current-year">2026</span> Air Commander HVAC. All rights reserved.</p>
+                <div class="flex items-center gap-6">
+                    <a href="#home" class="hover:text-slate-400 transition-colors">Privacy Policy</a>
+                    <a href="#home" class="hover:text-slate-400 transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Update current year automatically
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Set minimum date for date picker to today
+        const todayStr = new Date().toISOString().split('T')[0];
+        const prefDateEl = document.getElementById('prefDate');
+        if (prefDateEl) {
+            prefDateEl.setAttribute('min', todayStr);
+        }
+
+        // Helper function to pre-select service type when clicking service cards
+        function serviceSelect(serviceName) {
+            const selectEl = document.getElementById('serviceType');
+            if (selectEl) {
+                selectEl.value = serviceName;
+            }
+        }
+
+        // Form Submission Handler with frontend validation and feedback
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            const form = document.getElementById('hvac-request-form');
+            const successBox = document.getElementById('form-success-message');
+
+            // Simple validation check
+            const name = document.getElementById('fullName').value.trim();
+            const phone = document.getElementById('phoneNum').value.trim();
+            const email = document.getElementById('emailAddr').value.trim();
+            const service = document.getElementById('serviceType').value;
+            const date = document.getElementById('prefDate').value;
+            const address = document.getElementById('serviceAddress').value.trim();
+
+            if (!name || !phone || !email || !service || !date || !address) {
+                alert('Please fill in all required fields marked with *');
+                return;
+            }
+
+            // Hide form inputs or show success box
+            successBox.classList.remove('hidden');
+            form.reset();
+            
+            // Scroll to success message
+            successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    </script>
+</body>
+</html>
